@@ -3,16 +3,10 @@ class Train
 		@number = number
 		@type = type
 		@amount = amount
-		amount >=1
-		@speed = speed
-		speed >= 0 && speed <= 110
+		@speed = 0
 	end
 # attr_reader:number, :type , :amount
 train = Train.new
-
-def speed
-	@speed = speed
-end
 
 def acceleration
 	@speed += 10
@@ -48,7 +42,7 @@ def dell_wagon
 	end
 
 def total_amount
-	puts "#{@amount}"
+		@amount
 	end
 
 def train_route
